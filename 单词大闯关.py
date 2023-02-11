@@ -10,15 +10,16 @@ def choose_questions(questions_dictionary):
 
 
 def ask_question(window, question):
-    label = Label(master=window, bg="red", fg="yellow", font=("楷体", 14), text=question)
+    label1 = Label(master=window, bg="red", fg="yellow", font=("楷体", 14), text=question)
+    label2 = Label(master=window, bg="blue", fg="yellow", font=("楷体", 12), text="请在10秒内回答")
     entry = Entry(master=window, bg="blue", fg="yellow", font=("楷体", 17), width=15)
-
-    def get_player_answer():
-        return entry.get()
     button = Button(master=window, bg="blue", command=get_player_answer, fg="red", font=("楷体", 12), text="确定")
-    label.pack()
+    label1.pack()
+    label2.pack()
     entry.pack()
     button.pack()
+    sleep(10)
+    return entry.get()
 
 
 root = Tk()
