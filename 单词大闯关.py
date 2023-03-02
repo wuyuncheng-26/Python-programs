@@ -17,7 +17,9 @@ def ask_question(window, question):
     label2.pack()
     entry.pack()
     sleep(10)
-    return entry.get()
+    n = entry.get()
+    root.mainloop()
+    return n
 
 
 root = Tk()
