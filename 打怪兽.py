@@ -117,19 +117,32 @@ while True:
 32:3号宠物休息
 
 请选择对宠物下达的命令：""")
-        if player_choice == "111": p1.attack_enemy(m1)
-        elif player_choice == "112": p1.attack_enemy(m2)
-        elif player_choice == "113": p1.attack_enemy(m3)
-        elif player_choice == "12": p1.rest()
-        elif player_choice == "211": p2.attack_enemy(m1)
-        elif player_choice == "212": p2.attack_enemy(m2)
-        elif player_choice == "213": p2.attack_enemy(m3)
-        elif player_choice == "22": p2.rest()
-        elif player_choice == "311": p3.attack_enemy(m1)
-        elif player_choice == "312": p3.attack_enemy(m2)
-        elif player_choice == "313": p3.attack_enemy(m3)
-        elif player_choice == "32": p3.rest()
-        else: print("你没有输入正确的指令，请输入正确的指令。")
+        if player_choice == "111":
+            p1.attack_enemy(m1)
+        elif player_choice == "112":
+            p1.attack_enemy(m2)
+        elif player_choice == "113":
+            p1.attack_enemy(m3)
+        elif player_choice == "12":
+            p1.rest()
+        elif player_choice == "211":
+            p2.attack_enemy(m1)
+        elif player_choice == "212":
+            p2.attack_enemy(m2)
+        elif player_choice == "213":
+            p2.attack_enemy(m3)
+        elif player_choice == "22":
+            p2.rest()
+        elif player_choice == "311":
+            p3.attack_enemy(m1)
+        elif player_choice == "312":
+            p3.attack_enemy(m2)
+        elif player_choice == "313":
+            p3.attack_enemy(m3)
+        elif player_choice == "32":
+            p3.rest()
+        else:
+            print("你没有输入正确的指令，请输入正确的指令。")
 
         if randint(1, 2) == 1:
             choice([m1, m2, m3]).attack_enemy(choice([p1, p2, p3]), randint(20, 40))
