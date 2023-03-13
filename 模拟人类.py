@@ -1,3 +1,9 @@
+"""
+当前版本为1.3
+
+本版本主要更新内容：
+加入活力值设定
+"""
 # 导入random、threading、time和tqdm库中的部分函数和类
 # tqdm库是第三方库，需要先在命令提示符里用pip来下载
 from random import randint
