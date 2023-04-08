@@ -152,9 +152,8 @@ class Person:
     # 定义Person类的check_vitality()方法，作用是让模拟人的活力值每3秒减少1
     def reduce_vitality(self):
         while self.alive:
-            if self.vitality > 0:
-                person.vitality -= 1
-                sleep(3)
+            person.vitality -= 1
+            sleep(3)
 
 
 # 主程序
