@@ -1,2 +1,1 @@
-这里是我的Python作品~
-我会定期更新~
+These are all my Python programs.
