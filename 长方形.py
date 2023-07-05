@@ -3,6 +3,8 @@ from turtle import *
 hideturtle()
 tracer(0)
 color("blue")
+
+
 def draw_rectangle(x, y, a, b):
     penup()
     goto(x, y)
@@ -16,6 +18,8 @@ def draw_rectangle(x, y, a, b):
     end_fill()
     penup()
     update()
+
+
 draw_rectangle(0, 0, 100, 70)
 draw_rectangle(70, 80, 60, 40)
 draw_rectangle(150, 60, 140, 130)
