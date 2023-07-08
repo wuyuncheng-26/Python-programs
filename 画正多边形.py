@@ -1,4 +1,4 @@
-from time import *
+from time import sleep
 from turtle import *
 speed(8)
 color("blue")

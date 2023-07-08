@@ -1,6 +1,6 @@
-from time import *
+from time import sleep
 from tkinter import *
-from random import *
+from random import choice
 prize = ["巧克力", "冰激凌", "书", "玩具"]
 
 
