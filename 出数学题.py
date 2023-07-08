@@ -17,7 +17,7 @@ if n == 1:
         sleep(1)
 elif n == 2:
     a = randint(1000, 4999)
-    b = randint(1000, a)
+    b = randint(1000, a - 500)
     print(f"{a}-{b}")
     if input("输入“answer”查看答案：") == "answer":
         print(f"答案是：{a - b}")
