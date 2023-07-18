@@ -8,4 +8,4 @@ b = int(input("请输入边长："))
 for _ in range(a):
     forward(b)
     left(360 / a)
-sleep(3)
+sleep(5)
