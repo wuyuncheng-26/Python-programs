@@ -1,3 +1,4 @@
+# 本程序需安装第三方库beautifulsoup4和requests
 import bs4
 import requests
 print("————————豆瓣电影TOP250————————")
