@@ -1,10 +1,18 @@
+from time import sleep
 # 本程序需安装第三方库beautifulsoup4和requests
-import bs4
-import requests
+try:
+    import bs4
+    import requests
+except ImportError:
+    print("请安装 beautifulsoup4 和 requests 库！")
+    sleep(1)
+    exit()
 print("————————豆瓣电影TOP250————————")
 for start in range(0, 250, 25):
     url = f"https://movie.douban.com/top250?start={start}&filter="
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:70.0) Gecko/20100101 Firefox/70.0"}
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:70.0) Gecko/20100101 Firefox/70.0"
+    }
     res = requests.get(url=url, headers=headers)
     res.encoding = "utf-8"
     bs = bs4.BeautifulSoup(res.text, "html.parser")
